@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>This is my web page</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="form">
+        <div class="title-div">
+            <h1>Shri Sai Hospital</h1>
+            <p>This is a Google form. This form is created with HTML and CSS.</p>
+            <p class="required">*Required</p>
+        </div>
+        <form id="myForm" action="submit_form.php" method="post">
+            <div class="name-div">
+                <div class="name">1. Enter Your Name<span class="required">*</span></div>
+                <div class="input-div"><input type="input" name="answer" placeholder="Your answer"></div>
+            </div>
+            <div class="gmail-div">
+                <div class="name">2. Enter your Gmail.<span class="required">*</span></div>
+                <div class="input-div"><input type="input" name="answer" placeholder="Your answer"></div>
+            </div>
+            <div class="mobile-div">
+                <div class="name">3. Enter your mobile number<span class="required">*</span></div>
+                <div class="input-div"><input type="input" name="answer" placeholder="Your answer"></div>
+            </div>
+            <div class="gender-div">
+                <div class="name">4. Gender</div>
+                <div class="input-div gender-category">
+                    <label><input type="radio" name="gender" value="male"> Male</label>
+                    <label><input type="radio" name="gender" value="female"> Female</label>
+                    <label><input type="radio" name="gender" value="prefer_not_to_say"> Prefer not to say</label>
+                </div>
+            </div>
+            <div class="faculty-div">
+                <div class="name">5. The faculty here is very good.</div>
+                <div class="input-div faculty-category">
+                    <label><input type="radio" name="faculty" value="agree"> Agree</label>
+                    <label><input type="radio" name="faculty" value="disagree"> Disagree</label>
+                    <label><input type="radio" name="faculty" value="neutral"> Neutral</label>
+                </div>
+            </div>
+            <div class="clean-div">
+                <div class="name">6. The hospital pays a lot of attention to its cleanliness and hygiene.</div>
+                <div class="input-div clean-category">
+                    <label><input type="radio" name="cleanliness" value="agree"> Agree</label>
+                    <label><input type="radio" name="cleanliness" value="disagree"> Disagree</label>
+                    <label><input type="radio" name="cleanliness" value="neutral"> Neutral</label>
+                </div>
+            </div>
+            <div class="problem-div">
+                <div class="name">7. Did you face any problem while filling the form?</div>
+                <div class="input-div problem-category">
+                    <label><input type="radio" name="problem" value="yes"> Yes</label>
+                    <label><input type="radio" name="problem" value="no"> No</label>
+                </div>
+            </div>
+            <div class="medicine-div">
+                <div class="name">8. Is medicine available cheap here?</div>
+                <div class="input-div medicine-category">
+                    <label><input type="radio" name="medicine" value="yes"> Yes</label>
+                    <label><input type="radio" name="medicine" value="no"> No</label>
+                </div>
+            </div>
+            <div class="experienced-div">
+                <div class="name">9. Have you experienced any difficulties with communication or understanding your doctor?</div>
+                <div class="input-div experienced-category">
+                    <label><input type="radio" name="experienced" value="yes"> Yes</label>
+                    <label><input type="radio" name="experienced" value="no"> No</label>
+                </div>
+            </div>
+            <div class="treatment-div">
+                <div class="name">10. Is the treatment good here?</div>
+                <div class="input-div treatment-category">
+                    <label><input type="radio" name="treatment" value="yes"> Yes</label>
+                    <label><input type="radio" name="treatment" value="no"> No</label>
+                </div>
+            </div>
+            <div class="transport-div">
+                <div class="name">11. Is transport facility available here?</div>
+                <div class="input-div transport-category">
+                    <label><input type="radio" name="transport" value="yes"> Yes</label>
+                    <label><input type="radio" name="transport" value="no"> No</label>
+                </div>
+            </div>
+            <div class="facility-div">
+                <div class="name">12. Are all facilities available in this hospital?</div>
+                <div class="input-div facility-category">
+                    <label><input type="radio" name="facility" value="yes"> Yes</label>
+                    <label><input type="radio" name="facility" value="no"> No</label>
+                </div>
+            </div>
+            <div class="suggestion-div">
+                <div class="name">Any suggestions?</div>
+                <div class="input-div"><textarea name="suggestion" placeholder="Write your suggestion here."></textarea></div>
+            </div>
+            <div>
+                <input class="btn" type="submit" value="Submit">
+            </div>
+        </form>
+        <div class="last-div">
+            <p class="never">Never submit passwords through Google forms.</p>
+            <p class="term">This content is neither created nor endorsed by Google. Report Abuse - Terms of Service - Privacy Policy</p>
+            <h2>Google Forms</h2>
+        </div>
+    </div>
+    <script>
+        document.getElementById('myForm').addEventListener('submit', function(event) {
+            // Prevent the form from submitting normally
+            event.preventDefault();
+
+            // You can perform additional validation here if needed
+
+            // Redirect to the Thank You page
+            window.location.href = 'thank_you.html'; // Replace with your actual thank you page URL
+        });
+    </script>
+</body>
+</html>

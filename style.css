@@ -1,0 +1,198 @@
+body {
+    background-color: #ede7f6;
+    font-family: Roboto, Sans-serif;
+}
+
+.form {
+    width: 600px;
+    margin: auto;
+}
+
+.required {
+    font-size: 13px;
+    color: red;
+}
+
+.title-div, .name-div, .gmail-div, .mobile-div, .gender-div, .faculty-div, .clean-div, .problem-div, .medicine-div, .experienced-div, .treatment-div, .transport-div, .facility-div, .suggestion-div {
+    background-color: #FDFEFE;
+    margin: 15px;
+    border-radius: 8px;
+    padding: 25px;
+    width: 600px;
+}
+
+.title-div {
+    border-top: 8px solid #6703c4;
+}
+
+.name {
+    padding-top: 20px;
+    padding-left: 25px;
+    padding-bottom: 10px;
+    font-size: 15px;
+}
+
+.input-div {
+    padding-top: 10px;
+    padding-left: 25px;
+}
+
+.input-div input, .input-div textarea {
+    width: 550px;
+    border: 0;
+    outline: 0;
+    border-bottom: 1.5px solid #DCD7D7;
+    padding: 5px;
+}
+
+.input-div textarea {
+    height: 100px;
+    border: 1.5px solid #DCD7D7;
+    border-radius: 4px;
+}
+
+.gender-div .input-div,
+.faculty-div .input-div,
+.clean-div .input-div,
+.problem-div .input-div,
+.medicine-div .input-div,
+.experienced-div .input-div,
+.treatment-div .input-div,
+.transport-div .input-div,
+.facility-div .input-div {
+    padding-left: 0;
+}
+
+.gender-category,
+.faculty-category,
+.clean-category,
+.problem-category,
+.medicine-category,
+.experienced-category,
+.treatment-category,
+.transport-category,
+.facility-category {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0px;
+}
+
+.gender-category label,
+.faculty-category label,
+.clean-category label,
+.problem-category label,
+.medicine-category label,
+.experienced-category label,
+.treatment-category label,
+.transport-category label,
+.facility-category label {
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+
+.gender-category input[type="radio"],
+.faculty-category input[type="radio"],
+.clean-category input[type="radio"],
+.problem-category input[type="radio"],
+.medicine-category input[type="radio"],
+.experienced-category input[type="radio"],
+.treatment-category input[type="radio"],
+.transport-category input[type="radio"],
+.facility-category input[type="radio"] {
+    margin-right: 10px;
+}
+
+.btn {
+    height: 36px;
+    width: 100px;
+    background-color: #6703c4;
+    border-radius: 5px;
+    font-size: 14px;
+    letter-spacing: .5px;
+    font-weight: 540;
+    border: none;
+    padding: 10px;
+    color: white;
+    margin: 15px;
+}
+
+.last-div h2 {
+    text-align: center;
+    padding-top: 50px;
+    color: #a2a4a6;
+    font-weight: 200;
+}
+
+.term, .never {
+    font-size: 12px;
+    padding-left: 15px;
+    font-weight: 400;
+}
+
+.term {
+    padding-top: 5px;
+}
+
+.never {
+    padding-top: 70px;
+}
+body {
+    background-color: #ede7f6;
+    font-family: Roboto, Sans-serif;
+}
+
+.form {
+    width: 600px;
+    margin: auto;
+}
+
+.thank-you-page {
+    width: 600px;
+    margin: auto;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.thank-you-page h1 {
+    color: #6703c4;
+}
+
+.thank-you-page p {
+    font-size: 18px;
+}
+
+.btn {
+    height: 36px;
+    width: 100px;
+    background-color: #6703c4;
+    border-radius: 5px;
+    font-size: 14px;
+    letter-spacing: .5px;
+    font-weight: 540;
+    border: none;
+    padding: 10px;
+    color: white;
+    margin: 15px;
+}
+
+.last-div h2 {
+    text-align: center;
+    padding-top: 50px;
+    color: #a2a4a6;
+    font-weight: 200;
+}
+
+.term, .never {
+    font-size: 12px;
+    padding-left: 15px;
+    font-weight: 400;
+}
+
+.term {
+    padding-top: 5px;
+}
+
+.never {
+    padding-top: 70px;
+}
+
