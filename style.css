@@ -1,11 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 body {
     background-color: #ede7f6;
-    font-family: Roboto, Sans-serif;
+    font-family: 'Roboto', sans-serif;
+    transition: background-color 0.3s ease;
 }
 
 .form {
     width: 600px;
     margin: auto;
+    animation: fadeIn 1s ease-in-out;
 }
 
 .required {
@@ -19,6 +23,8 @@ body {
     border-radius: 8px;
     padding: 25px;
     width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
 }
 
 .title-div {
@@ -30,19 +36,31 @@ body {
     padding-left: 25px;
     padding-bottom: 10px;
     font-size: 15px;
+    font-weight: bold;
+    animation: shine 1s ease-in-out infinite alternate;
 }
 
 .input-div {
     padding-top: 10px;
     padding-left: 25px;
+    
 }
 
 .input-div input, .input-div textarea {
     width: 550px;
     border: 0;
     outline: 0;
-    border-bottom: 1.5px solid #DCD7D7;
-    padding: 5px;
+    border-radius: .6rem;
+    border-bottom: 1.5px solid #1ca142;
+    padding: 7px;
+    transition: border-bottom 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.input-div input:focus, .input-div textarea:focus {
+    border-bottom: 1.5px solid #6703c4;
+    background-color: #2e2e2e;
+    color: white;
+    font-weight: bold;
 }
 
 .input-div textarea {
@@ -88,6 +106,8 @@ body {
 .facility-category label {
     margin-bottom: 5px;
     font-size: 15px;
+    cursor: pointer;
+    transition: color 0.3s ease;
 }
 
 .gender-category input[type="radio"],
@@ -114,6 +134,13 @@ body {
     padding: 10px;
     color: white;
     margin: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #5a02a1;
+    transform: scale(1.05);
 }
 
 .last-div h2 {
@@ -136,63 +163,52 @@ body {
 .never {
     padding-top: 70px;
 }
-body {
-    background-color: #ede7f6;
-    font-family: Roboto, Sans-serif;
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
-.form {
-    width: 600px;
-    margin: auto;
+@keyframes shine {
+    0% {
+        color:rgb(233, 73, 10);
+    }
+    100% {
+        color:aqua;
+    }
 }
 
-.thank-you-page {
-    width: 600px;
-    margin: auto;
-    text-align: center;
-    padding: 50px 0;
-}
-
-.thank-you-page h1 {
-    color: #6703c4;
-}
-
-.thank-you-page p {
-    font-size: 18px;
-}
-
-.btn {
-    height: 36px;
-    width: 100px;
-    background-color: #6703c4;
-    border-radius: 5px;
-    font-size: 14px;
-    letter-spacing: .5px;
-    font-weight: 540;
-    border: none;
-    padding: 10px;
+.title-div, .name-div, .gmail-div, .mobile-div, .gender-div, .faculty-div, .clean-div, .problem-div, .medicine-div, .experienced-div, .treatment-div, .transport-div, .facility-div, .suggestion-div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(192, 11, 11, 0.6);
+    background-color: #2e2e2e;
     color: white;
-    margin: 15px;
+    font-weight:bolder;
+    transition: background-color 0.3s ease-out, color 0.3s ease-out;
+}
+.thank{
+    padding-left: 35rem;
+}
+.thank span{
+    color: #6703c4;
+
+}
+.thank p{
+    color:brown;
 }
 
-.last-div h2 {
-    text-align: center;
-    padding-top: 50px;
-    color: #a2a4a6;
-    font-weight: 200;
+.btnn{
+    background:#d34410 ;
+    border-radius: 1.2rem;
+    box-shadow: red;
+    text-decoration: white;
 }
 
-.term, .never {
-    font-size: 12px;
-    padding-left: 15px;
-    font-weight: 400;
+.btnn a{
+    color: #ede7f6;
+    
 }
-
-.term {
-    padding-top: 5px;
-}
-
-.never {
-    padding-top: 70px;
-}
-
